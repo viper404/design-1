@@ -1,6 +1,40 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/";
 
 body {
 	font-size: 62.5%;
+	text-align: center;
+}
+
+.hero {
+	max-width: 100em;
+	margin: 0 auto;
+
+	header {
+		img {
+			width: 8em;
+			height: 2em;
+			float: left;
+		}
+		ul {
+			float: right;
+
+			li {
+				float: left;
+				margin: 0 .5em;
+				padding: 1em;
+			}
+		}
+		@include clearfix;
+	}
+
+	h1 {
+		font-size: 4em;
+		padding: 1em 0 .5em 0;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
 }
