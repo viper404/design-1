@@ -2,6 +2,12 @@
 @import "compass/css3";
 @import "compass/utilities/";
 
+$bg-color: #efefef;
+$text-color: #4f4f4f;
+$secondy-text-color: #D9DADA;
+$highlight-text-color: white;
+$button-color: #6cdcac;
+
 body {
 	font-size: 62.5%;
 	text-align: center;
@@ -11,12 +17,18 @@ body {
 	max-width: 100em;
 	margin: 0 auto;
 
+	background: url('/images/find-an-agent-hero.png');
+	background-size: cover;
+
+	color: $highlight-text-color;
+
 	header {
 		img {
 			width: 8em;
 			height: 2em;
 			float: left;
 		}
+
 		ul {
 			float: right;
 
@@ -26,6 +38,7 @@ body {
 				padding: 1em;
 			}
 		}
+
 		@include clearfix;
 	}
 
@@ -36,5 +49,27 @@ body {
 
 	h2 {
 		font-size: 2em;
+	}
+
+	form {
+		padding: 2em 0em 4em 0em;
+
+		input[type="text"] {
+			padding: 1em;
+			border: 0;
+			width: 18em;
+			border-radius: 2px 0 0 2px;
+			background-color: $bg-color;
+			opacity: .3;
+		}
+
+		input[type="button"] {
+			color: $highlight-text-color;
+			padding: 1em;
+			border: 0;
+			width: 6em;
+			border-radius: 0 2px 2px 0;
+			background-color: green;
+		}
 	}
 }
