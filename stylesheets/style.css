@@ -65,53 +65,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 11, ../sass/style.scss */
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
   text-align: center;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .hero {
-  max-width: 100em;
+  max-width: 75em;
   margin: 0 auto;
   background: url("/images/find-an-agent-hero.png");
   background-size: cover;
   color: white;
 }
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .hero header {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 .hero header img {
   width: 8em;
   height: 2em;
   float: left;
 }
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .hero header ul {
   float: right;
 }
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .hero header ul li {
   float: left;
-  margin: 0 .5em;
-  padding: 1em;
+  margin: 1em .5em;
+  padding: .5em 1em;
+  border: 1px solid transparent;
+  border-radius: 2px;
 }
-/* line 45, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
+.hero header ul li:last-child {
+  border: 1px solid white;
+}
+/* line 52, ../sass/style.scss */
 .hero h1 {
   font-size: 4em;
+  font-weight: bold;
   padding: 1em 0 .5em 0;
 }
-/* line 50, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .hero h2 {
   font-size: 2em;
+  color: #D9DADA;
 }
-/* line 54, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .hero form {
   padding: 2em 0em 4em 0em;
 }
-/* line 57, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .hero form input[type="text"] {
   padding: 1em;
   border: 0;
@@ -120,12 +129,13 @@ body {
   background-color: #efefef;
   opacity: .3;
 }
-/* line 66, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .hero form input[type="button"] {
   color: white;
   padding: 1em;
   border: 0;
   width: 6em;
   border-radius: 0 2px 2px 0;
-  background-color: green;
+  background-color: #90EE90;
+  text-transform: uppercase;
 }
