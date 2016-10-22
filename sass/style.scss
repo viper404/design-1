@@ -9,12 +9,13 @@ $highlight-text-color: white;
 $button-color: #6cdcac;
 
 body {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
 	text-align: center;
 }
 
 .hero {
-	max-width: 100em;
+	max-width: 75em;
 	margin: 0 auto;
 
 	background: url('/images/find-an-agent-hero.png');
@@ -34,8 +35,14 @@ body {
 
 			li {
 				float: left;
-				margin: 0 .5em;
-				padding: 1em;
+				margin: 1em .5em;
+				padding: .5em 1em;
+				border: 1px solid transparent;
+				border-radius: 2px;
+
+				&:last-child {
+					border: 1px solid $highlight-text-color;
+				}
 			}
 		}
 
@@ -44,11 +51,13 @@ body {
 
 	h1 {
 		font-size: 4em;
+		font-weight: bold;
 		padding: 1em 0 .5em 0;
 	}
 
 	h2 {
 		font-size: 2em;
+		color: $secondy-text-color;
 	}
 
 	form {
@@ -69,7 +78,8 @@ body {
 			border: 0;
 			width: 6em;
 			border-radius: 0 2px 2px 0;
-			background-color: green;
+			background-color: #90EE90;
+			text-transform: uppercase;
 		}
 	}
 }
