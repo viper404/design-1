@@ -83,3 +83,21 @@ body {
 		}
 	}
 }
+
+.numbers {
+	width: 60em;
+	margin: 0 auto;
+
+	ul {
+		position: relative;
+		top: -1em;
+		background: $bg-color;
+
+		li {
+			float: left;
+			width: 25%;
+		}
+
+		@include clearfix;
+	}
+}
