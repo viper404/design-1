@@ -139,3 +139,22 @@ body {
   background-color: #90EE90;
   text-transform: uppercase;
 }
+
+/* line 87, ../sass/style.scss */
+.numbers {
+  width: 60em;
+  margin: 0 auto;
+}
+/* line 91, ../sass/style.scss */
+.numbers ul {
+  position: relative;
+  top: -1em;
+  background: #efefef;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 96, ../sass/style.scss */
+.numbers ul li {
+  float: left;
+  width: 25%;
+}
