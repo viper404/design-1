@@ -16,6 +16,7 @@ body {
 
 .hero {
 	max-width: 75em;
+	height: 30em;
 	margin: 0 auto;
 
 	background: url('/images/find-an-agent-hero.png');
@@ -78,7 +79,7 @@ body {
 			border: 0;
 			width: 6em;
 			border-radius: 0 2px 2px 0;
-			background-color: #90EE90;
+			background-color: green;
 			text-transform: uppercase;
 		}
 	}
@@ -90,12 +91,29 @@ body {
 
 	ul {
 		position: relative;
-		top: -1em;
+		top: -4em;
 		background: $bg-color;
 
 		li {
 			float: left;
 			width: 25%;
+			box-sizing: border-box;
+			border-top: 1px solid $secondy-text-color;
+			border-bottom: 1px solid $secondy-text-color;
+			border-left: 1px solid $secondy-text-color;
+
+			&:last-child {
+				border-right: 1px solid $secondy-text-color;
+			}
+
+			h2 {
+				font-size: 2em;
+				padding: 1em 0;
+			}
+
+			h3 {
+				padding: 0 0 2em 0;
+			}
 		}
 
 		@include clearfix;
